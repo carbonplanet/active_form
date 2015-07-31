@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "active_form"
-  spec.version       = CpLogging::VERSION
+  spec.version       = '0.0.8.1'
   spec.authors       = ["Carbon Planet Limited"]
   spec.email         = ["support@carbonplanet.com"]
   spec.summary       = "Legacy Active Form gem"
