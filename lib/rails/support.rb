@@ -1,0 +1,5 @@
+require 'rails/view_helper'
+require 'rails/controller_helper'
+require 'rails/model/loader'
+require 'rails/acts_as_dropdown/acts_as_dropdown'
+require 'rails/acts_as_dropdown/dropdown'

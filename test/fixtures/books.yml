@@ -1,0 +1,8 @@
+awdr:
+  id: 1
+  title: Agile Web Development with Rails
+  isbn: 0-9766940-0-X
+  publication_date: 2005-08-01
+  publisher_id: 1
+  created_at: <%= 5.minutes.ago.to_s :db %>
+  updated_at: <%= 5.minutes.ago.to_s :db %>

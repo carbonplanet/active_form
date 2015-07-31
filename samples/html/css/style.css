@@ -1,0 +1,175 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+
+body {
+	color: #333;
+	padding: 0 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 76%;
+}
+
+input.disabled {
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+}
+
+input.required, textarea.required {
+	border: 1px solid #00A8E6;
+}
+input.validation-failed, textarea.validation-failed {
+	border: 1px solid #FF3300;
+	color : #FF3300;
+}
+
+td.elem_text input.validation-passed,
+td.elem_password input.validation-passed, 
+td.elem_textarea textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color : #000;
+}
+
+.validation-advice {
+	margin: 0;
+	padding: 5px;
+	background-color: #FF3300;
+	color : #FFF;
+	font-weight: bold;
+}
+
+.custom-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #C8AA00;
+	color : #FFF;
+	font-weight: bold;
+}
+
+label {
+	font-weight: bold;
+}
+
+.form-row {
+	clear: both;
+	padding: 0.5em;
+}
+
+.field-label {}
+
+.field-widget {}
+
+div#container {
+	width: 400px;
+	margin: 20px auto;
+}
+
+table {
+	width: 100%;
+}
+
+table thead th {
+	padding:  10px 3px;
+	text-align: left;
+	color: white;
+	background: black;
+}
+
+table table td {
+	padding: 3px;
+}
+
+tr.header td {
+	padding: 0;
+}
+
+tr.header h3 {
+	margin: 0;
+	padding: 10px 3px;
+	background: #00A8E6;
+	border-top: 1px solid black;
+	font-size: 1em;
+}
+
+.elem_text input {
+	width: 100%;
+}
+
+.elem_password input {
+	width: 100%;
+}
+
+.elem_textarea textarea {
+	width: 100%;
+}
+
+table .elem_text input {
+	width: 99%;
+}
+
+table .elem_password input {
+	width: 99%;
+}
+
+table .elem_textarea textarea {
+	width: 99%;
+}
+
+tr td.label {
+	width: 120px;
+}
+
+tr.advice td {
+	padding: 0;
+}
+
+fieldset {
+	color: white;
+	border: none;
+	padding: 0.5em;
+	background: black;
+}	
+
+fieldset fieldset {
+	padding: 0.5em;
+	background: #333;
+	margin-bottom: 1em;
+}
+
+fieldset legend {
+	color: darkorange;
+	font-weight: bold;
+	padding: 0.4em 0.6em;	
+	background: black;
+}
+
+fieldset fieldset legend {
+	background: #333;
+}
+
+fieldset legend.form {
+	font-size: 1.3em;
+}
+
+fieldset div {
+	margin: 0.5em 0;
+}
+
+fieldset div label {
+	display: block;
+	margin: 0.5em 0;
+}
+
+fieldset input.required, fieldset textarea.required {
+	border: 1px solid darkorange;
+}
+
+fieldset input.validation-failed, fieldset textarea.validation-failed {
+	border: 1px solid magenta;
+	color : magenta;
+}
+
+fieldset div.elem_text input.validation-passed,
+fieldset div.elem_password input.validation-passed, 
+fieldset div.elem_textarea textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color : #000;
+}

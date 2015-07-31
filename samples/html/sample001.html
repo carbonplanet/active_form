@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Sample 001</title>	
+	<script src="js/prototype.js" type="text/javascript"></script>
+	<script src="js/effects.js" type="text/javascript"></script>
+	<script src="js/validation.js" type="text/javascript" ></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />		
+</head>
+<body>
+	<div id="container">
+		<form action="#myform" class="active_form" id="myform" method="post">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Myform</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="header">
+        <td colspan="2">
+          <h3 onclick="$('section-myform_person').toggle()">
+            <span class="label">Your details</span>
+          </h3>
+        </td>
+      </tr>
+      <tr class="advice">
+        <td colspan="2">
+<div class="validation-advice advice-required" id="advice-required-myform_person_first_name" style="display: none">First Name: can't be blank</div>
+<div class="validation-advice advice-required" id="advice-required-myform_person_last_name" style="display: none">Last Name: can't be blank</div>
+<div class="validation-advice advice-required" id="advice-required-myform_person_password" style="display: none">Password: can't be blank</div>
+<div class="validation-advice advice-required" id="advice-required-myform_person_password_confirm" style="display: none">Password Confirm: can't be blank</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="section-myform_person">
+            <table style="background: lightblue;">
+              <tr class="label">
+                <td colspan="2">
+                  <label class="required" for="myform_person_first_name">First Name</label>
+                </td>
+              </tr>
+              <tr class="elem_text required" id="elem_myform_person_first_name">
+                <td class="elem" colspan="2">
+                  <input class="required" id="myform_person_first_name" name="myform[person][first_name]" type="text"/>
+                </td>
+              </tr>
+              <tr class="label">
+                <td colspan="2">
+                  <label class="required" for="myform_person_last_name">Last Name</label>
+                </td>
+              </tr>
+              <tr class="elem_text required" id="elem_myform_person_last_name">
+                <td class="elem" colspan="2">
+                  <input class="required" id="myform_person_last_name" name="myform[person][last_name]" type="text"/>
+                </td>
+              </tr>
+              <tr class="label">
+                <td colspan="2">
+                  <label class="required" for="myform_person_password">Password</label>
+                </td>
+              </tr>
+              <tr class="elem_password required" id="elem_myform_person_password">
+                <td class="elem" colspan="2">
+                  <input class="required" id="myform_person_password" name="myform[person][password]" type="password"/>
+                </td>
+              </tr>
+              <tr class="label">
+                <td colspan="2">
+                  <label class="required" for="myform_person_password_confirm">Password Confirm</label>
+                </td>
+              </tr>
+              <tr class="elem_password required" id="elem_myform_person_password_confirm">
+                <td class="elem" colspan="2">
+                  <input class="required" id="myform_person_password_confirm" name="myform[person][password_confirm]" type="password"/>
+                </td>
+              </tr>
+              <tr id="elem-myform_person_country">
+                <td class="label">
+                  <label for="myform_person_country">Country</label>
+                </td>
+                <td class="elem_select">
+                  <select class="elem_select" id="myform_person_country" name="myform[person][country]">
+                    <option value="nl">Nederland</option>
+                    <option value="be">België</option>
+                  </select>
+                </td>
+              </tr>
+              <tr id="elem-myform_person_submit">
+                <td class="elem_submit" colspan="2">
+                  <input class="elem_submit" id="myform_person_submit" name="myform[person][submit]" type="submit" value="Send"/>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="header">
+        <td colspan="2">
+          <h3 onclick="$('section-myform_message').toggle()">
+            <span class="label">Your message</span>
+          </h3>
+        </td>
+      </tr>
+      <tr class="advice">
+        <td colspan="2">
+<div class="validation-advice advice-required" id="advice-required-myform_message_subject" style="display: none">Subject: can't be blank</div>
+<div class="validation-advice advice-required" id="advice-required-myform_message_message" style="display: none">Message: can't be blank</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="section-myform_message">
+            <table style="background: lightblue;">
+              <tr id="elem-myform_message_subject">
+                <td class="label">
+                  <label class="required" for="myform_message_subject">Subject</label>
+                </td>
+                <td class="elem_text required">
+                  <input class="required" id="myform_message_subject" name="myform[message][subject]" type="text"/>
+                </td>
+              </tr>
+              <tr class="label">
+                <td colspan="2">
+                  <label class="required" for="myform_message_message">Message</label>
+                </td>
+              </tr>
+              <tr class="elem_textarea required" id="elem_myform_message_message">
+                <td class="elem" colspan="2">
+                  <textarea class="required" cols="10" id="myform_message_message" name="myform[message][message]" rows="5"></textarea>
+                </td>
+              </tr>
+              <tr id="elem-myform_message_submit">
+                <td class="elem_submit" colspan="2">
+                  <input class="elem_submit" id="myform_message_submit" name="myform[message][submit]" type="submit" value="Send"/>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<script type="text/javascript" charset="utf-8">//<![CDATA[
+var fform_myform=$('myform');if(fform_myform){
+  new Validation(fform_myform, {stopOnFirst:false, useTitles:true});
+}
+//]]>
+</script>
+</form>
+
+	</div>
+</body>
+</html>

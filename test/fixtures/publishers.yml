@@ -1,0 +1,10 @@
+pragprog:
+  id: 1
+  name: The Pragmatic Programmers
+  created_at: <%= 5.minutes.ago.to_s :db %>
+  updated_at: <%= 5.minutes.ago.to_s :db %>
+oreilly:
+  id: 2
+  name: O'Reilly
+  created_at: <%= 5.minutes.ago.to_s :db %>
+  updated_at: <%= 5.minutes.ago.to_s :db %>
