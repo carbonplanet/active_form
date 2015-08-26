@@ -3,7 +3,12 @@ require 'active_support'
 require 'iconv'
 require 'builder'
 require 'yaml'
-#require 'parsedate'
+
+if RUBY_VERSION.to_f == 1.8
+  require 'parsedate'
+else
+  require 'parsedate_patch'
+end
 
 module ActiveForm
 
