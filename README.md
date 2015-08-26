@@ -6,6 +6,8 @@ with modifications such that it runs under Ruby 1.9 or better.
 The problem was that Ruby 1.8 had a thing called `ParseDate` which is no
 longer present in Ruby 1.9.  So I've added a quick monkeypatch.
 
+See http://stackoverflow.com/a/6505748/917187 for more.
+
 ## Original Readme Below
 
 Copyright (c) 2007-2008 atelierfabien - loobmedia
