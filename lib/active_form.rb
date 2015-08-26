@@ -4,7 +4,7 @@ require 'iconv'
 require 'builder'
 require 'yaml'
 
-if RUBY_VERSION.to_f == 1.8
+if RUBY_VERSION.to_f < 1.9
   require 'parsedate'
 else
   require 'parsedate_patch'
