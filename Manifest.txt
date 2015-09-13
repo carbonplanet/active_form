@@ -79,6 +79,7 @@ lib/active_form/widgets/base.rb
 lib/loob/uri_validator.rb
 lib/merb/merbtasks.rb
 lib/merb/support.rb
+lib/parsedate_patch.rb
 lib/rails/acts_as_dropdown/MIT-LICENSE
 lib/rails/acts_as_dropdown/acts_as_dropdown.rb
 lib/rails/acts_as_dropdown/dropdown.rb
