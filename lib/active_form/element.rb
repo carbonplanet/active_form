@@ -1,13 +1,13 @@
 module ActiveForm::Element
-  
+
   include ActiveForm::Mixins::LoaderMethods
-  
+
   class NoElemException < StandardError #:nodoc:
   end
-  
+
   class MismatchException < StandardError #:nodoc:
   end
-  
+
   class << self
 
     def element?(klass)
@@ -31,7 +31,7 @@ module ActiveForm::Element
       item.accept_block(&block) if block_given?
       item
     end
-    
+
     def create(definition_name, &block)
       ActiveForm::Element::Base::create(definition_name, &block)
     end
