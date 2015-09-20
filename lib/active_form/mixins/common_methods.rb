@@ -192,9 +192,9 @@ module ActiveForm::Mixins::CommonMethods
       flags.flatten.each do |flag|
         self.element_html_flag_names += [flag.to_sym]
         unless skip_methods
-          define_method("#{flag}=")  { |value| self.html_flags[flag.to_sym] = value.to_s.to_boolean } unless instance_methods.include?("#{flag}=")
-          define_method("#{flag}?")  { self.html_flags[flag.to_sym] == true } unless instance_methods.include?("#{flag}?")
-          define_method("#{flag}")   { self.html_flags[flag.to_sym] } unless instance_methods.include?("#{flag}")
+          define_method("#{flag}=")  { |value| self.html_flags[flag.to_sym] = value.to_s.to_boolean } unless method_defined?("#{flag}=")
+          define_method("#{flag}?")  { self.html_flags[flag.to_sym] == true } unless method_defined?("#{flag}?")
+          define_method("#{flag}")   { self.html_flags[flag.to_sym] } unless method_defined?(flag)
         end
       end
     end
@@ -204,9 +204,9 @@ module ActiveForm::Mixins::CommonMethods
       flags.flatten.each do |flag|
         self.element_option_flag_names += [flag.to_sym]
         unless skip_methods
-          define_method("#{flag}=")  { |value| self.option_flags[flag.to_sym] = value.to_s.to_boolean } unless instance_methods.include?("#{flag}=")
-          define_method("#{flag}?")  { self.option_flags[flag.to_sym] == true } unless instance_methods.include?("#{flag}?")
-          define_method("#{flag}")   { self.option_flags[flag.to_sym] } unless instance_methods.include?("#{flag}")
+          define_method("#{flag}=")  { |value| self.option_flags[flag.to_sym] = value.to_s.to_boolean } unless method_defined?("#{flag}=")
+          define_method("#{flag}?")  { self.option_flags[flag.to_sym] == true } unless method_defined?("#{flag}?")
+          define_method("#{flag}")   { self.option_flags[flag.to_sym] } unless method_defined?(flag)
         end
       end
     end
